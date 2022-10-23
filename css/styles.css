@@ -129,7 +129,7 @@ nav{
 .link-item{
     text-decoration: none;
     color: var(--text-color);
-   
+   transition: color 250ms;
 
 }
 
@@ -141,11 +141,24 @@ nav{
 .current-link-item{
     text-decoration: none;
     color: var(--color-accent);
+   height: 48px;
+}
+.current-link-item::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 2px;
+    margin-top: 28px;
 
 }
-.current-link-item:hover{color:var(--color-accent)}
 
-.current-link-item:focus{color:var(--color-accent)}
+/* .current-link-item:hover{color:var(--color-accent)}
+
+.current-link-item:focus{color:var(--color-accent)} */
+
+
 
 .contact-icon{
     fill: currentColor;
@@ -158,7 +171,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    transition: color 250ms;
 }
 
 .link-contact-item:hover{color:var(--color-accent)}
