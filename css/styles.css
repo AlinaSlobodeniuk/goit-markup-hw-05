@@ -5,7 +5,7 @@
     --text-color:#212121;
     --text-color-optional:#757575;
     --social-icon-color: #AFB1B8;
-    --timing-duration: 2500ms;
+    --timing-duration: 250ms;
 }
 
 body{
@@ -508,7 +508,9 @@ margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    transition: color var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
 }
+
 .link-address:hover{color:var(--color-accent)}
 
 .link-address:focus{color:var(--color-accent)}
@@ -521,6 +523,7 @@ margin-bottom: 30px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: color var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
 }
 .link-contact-address:hover{color:var(--color-accent)}
 
@@ -568,6 +571,7 @@ margin-bottom: 30px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     fill: var(--color-background);
+    transition: background-color var(--timing-duration), fill var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
 }
 
 .footer-social-link:hover{
@@ -623,6 +627,7 @@ margin-top: 30px;
 .link-portfolio{
     display: block;
     text-decoration: none;
+    transition: box-shadow var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
 }
 
 .link-portfolio:hover{
@@ -671,6 +676,7 @@ margin-top: 30px;
     cursor: pointer;
     padding: 6px 22px;
     border: none;
+    transition: background-color var(--timing-duration), color var(--timing-duration), box-shadow var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
 }
 
 .button-portfolio-item:hover{
