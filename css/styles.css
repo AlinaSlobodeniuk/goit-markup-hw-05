@@ -217,6 +217,11 @@ nav{
     border-radius: 4px;
     align-items: center;
     text-align: center;
+    transition: background-color var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+}
+
+.hero-button:active{
+    background-color: #188CE8;
 }
 
 /* Наші переваги */
@@ -752,6 +757,7 @@ background-color: var(--color-accent);
     width: 100%;
     height: 100%;
     z-index: 1;
+    transition: opacity var(--timing-duration), visibility var(--timing-duration);
 }
 
 .modal {
@@ -764,7 +770,6 @@ background-color: var(--color-accent);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: opacity var(--timing-duration), visibility var(--timing-duration);
 }
 
 .modal-close-button {
