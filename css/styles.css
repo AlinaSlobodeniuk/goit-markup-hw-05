@@ -315,7 +315,7 @@ margin-bottom: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--color-background);
     background: rgba(47, 48, 58, 0.8);
     height: 70px;
     width: 100%;
@@ -565,7 +565,7 @@ margin-bottom: 30px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--color-background);
     margin-bottom: 20px;
 }
 
@@ -673,7 +673,7 @@ overflow: hidden;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--color-background);
 }
 
 .link-portfolio:hover .card-description{
