@@ -5,7 +5,7 @@
     --text-color:#212121;
     --text-color-optional:#757575;
     --social-icon-color: #AFB1B8;
-    --timing-duration: 250ms;
+    --timing-duration: 2500ms;
 }
 
 body{
@@ -129,7 +129,7 @@ nav{
 .link-item{
     text-decoration: none;
     color: var(--text-color);
-    transition: color var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
@@ -165,7 +165,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration); 
+    transition: color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .link-contact-item:hover{color:var(--color-accent)}
@@ -217,7 +217,7 @@ nav{
     border-radius: 4px;
     align-items: center;
     text-align: center;
-    transition: background-color var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:active{
@@ -410,11 +410,11 @@ margin-bottom: 30px;
     align-items: center;
     justify-content: center;
     fill: var(--social-icon-color);
-    transition: background-color var(--timing-duration), fill var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-social-icon{
-    transition: background-color var(--timing-duration), fill var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: fill var(--timing-duration)cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-social-link:hover{
@@ -426,13 +426,10 @@ margin-bottom: 30px;
 }
 
 .our-team-social-link:hover .our-team-social-icon{
-    background-color: var(--color-accent);
     fill: var(--color-background)
-    
 }
 
-.our-team-social-link:focus .our-team-social-icon{
-    background-color: var(--color-accent);
+.our-team-social-link:focus .our-team-social-icon{ 
     fill: var(--color-background)
 }
 
@@ -467,11 +464,11 @@ margin-bottom: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: var(--social-icon-color);  
-    transition: border-color var(--timing-duration), fill var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: border-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-icon{
-    transition: border-color var(--timing-duration), fill var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: fill var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-link:hover{
@@ -530,12 +527,12 @@ margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    transition: color var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-address:hover{color:var(--color-accent)}
+.link-address:hover{color:var(--color-accent);}
 
-.link-address:focus{color:var(--color-accent)}
+.link-address:focus{color:var(--color-accent);}
 
 .link-contact-address{
     text-decoration: none;
@@ -545,11 +542,11 @@ margin-bottom: 30px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    transition: color var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-contact-address:hover{color:var(--color-accent)}
+.link-contact-address:hover{color:var(--color-accent);}
 
-.link-contact-address:focus{color:var(--color-accent)}
+.link-contact-address:focus{color:var(--color-accent);}
 
 .footer-box{
     display: flex;
@@ -593,7 +590,7 @@ margin-bottom: 30px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     fill: var(--color-background);
-    transition: background-color var(--timing-duration), fill var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover{
@@ -649,7 +646,7 @@ margin-top: 30px;
 .link-portfolio{
     display: block;
     text-decoration: none;
-    transition: box-shadow var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: box-shadow var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -667,7 +664,7 @@ overflow: hidden;
     padding: 63px 24px;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition: transform var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration), box-shadow var(--timing-duration);
+    transition: transform var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-description>p{
@@ -732,7 +729,7 @@ overflow: hidden;
     cursor: pointer;
     padding: 6px 22px;
     border: none;
-    transition: background-color var(--timing-duration), color var(--timing-duration), box-shadow var(--timing-duration), cubic-bezier(0.4, 0, 0.2, 1) var(--timing-duration);
+    transition: background-color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1), color var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1), box-shadow var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio-item:hover{
@@ -758,7 +755,7 @@ background-color: var(--color-accent);
     width: 100%;
     height: 100%;
     z-index: 1;
-    transition: opacity var(--timing-duration), visibility var(--timing-duration);
+    transition: opacity var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--timing-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
